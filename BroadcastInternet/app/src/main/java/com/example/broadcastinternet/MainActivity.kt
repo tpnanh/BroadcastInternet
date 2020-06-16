@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        internetStatus = findViewById(R.id.internet_status);
+        internetStatus = findViewById(R.id.internet_status)
 
         val connectivityManager: ConnectivityManager = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         if (connectivityManager is ConnectivityManager) {
