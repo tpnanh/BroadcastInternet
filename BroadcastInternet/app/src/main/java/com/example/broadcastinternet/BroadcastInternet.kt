@@ -10,7 +10,6 @@ import android.net.ConnectivityManager
 class BroadcastInternet : BroadcastReceiver() {
 
     override fun onReceive(p0: Context?, p1: Intent?) {
-
         if (p1!!.action.equals("android.net.wifi.WIFI_STATE_CHANGED")) {
             MainActivity.changeState()
         }
